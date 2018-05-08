@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1.0 , maximun-scale=1.0 , minimun-scale=1.0">
+    <title>MyMusic</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Shrikhand" rel="stylesheet">
+</head>
+
+<body>
+    <header class="portada">
+
+        <h1 class="title">myMusic
+
+
+        </h1>
+
+
+    </header>
+    <section id="container" class="container">
+
+        <div class="menu-small">
+            <button>Menu</button>
+            <nav class="nav-small">
+                <ul class="ul-small">
+                    <li class="li-small">
+
+                        <a class="small" href="index.html">Home</a>
+                        <hr class="hr-small">
+                        <a class="small" href="lista.html">Lista de canciones</a>
+                        <hr class="hr-small">
+                        <a class="small" href="#">Acerca De</a>
+                        <hr class="hr-small">
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="body">
+            <article>
+                <h3 class="referencia">Descripcion:</h3>
+                <p id="mytexto">Este disco contiene 30 albumnes y en cada album bienen mas de 40 canciones completas,Musica para todos los gustos , todas las edades con los mejores exitos selecionados del <span>Ayer Hoy y Siempre .</span> </p>
+                <p id="mytexto"><span>Recuerda puedes ecucharlo en tu equipo Dvd computadora o bluerray.Tambien puedes copiarlo a una memoria USB (8GB) tambien ala memoria de su Celular.</span>
+                </p>
+
+            </article>
+            <section class="video">
+                <article>
+
+                    <p class="referencia">Demostacion en Equipo</p>
+                    <video controls>
+                  <source src="video/pino.mp4" type="video/mp4">
+                </video>
+                </article>
+                <article>
+
+                    <p class="referencia">Demostacion en DVD</p>
+                    <video controls>
+                  <source src="video/pina.mp4" type="video/mp4">
+                </video>
+                </article>
+
+
+            </section>
+
+
+        </div>
+    </section>
+    <footer>
+        <p>Richard Lipa Cochachi</p>
+    </footer>
+
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("nav").toggle(600);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
